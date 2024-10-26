@@ -4,7 +4,7 @@ import { ResponsiveContainer } from 'recharts';
 
 import { ChartContext } from '../../context/ChartContext.js';
 import { cn } from '../../utils.js';
-import { Chart } from './Chart.js';
+import { ChartStyle } from './ChartStyle.js';
 
 import type { ChartConfig } from './types.js';
 
@@ -27,7 +27,7 @@ export const ChartContainer: React.FC<
         ref={ref}
         {...props}
       >
-        <Chart.Style config={config} id={chartId} />
+        <ChartStyle config={config} id={chartId} />
         <ResponsiveContainer>{children}</ResponsiveContainer>
       </div>
     </ChartContext.Provider>
