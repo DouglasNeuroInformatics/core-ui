@@ -1,4 +1,4 @@
-import type { Theme } from '@/hooks';
+import type { Theme } from '../../hooks.js';
 
 export type ChartConfig = {
   [key: string]: {

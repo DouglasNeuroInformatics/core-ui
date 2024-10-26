@@ -2,9 +2,8 @@ import { forwardRef } from 'react';
 
 import { Corner, Root, Viewport } from '@radix-ui/react-scroll-area';
 
-import { cn } from '@/utils';
-
-import { ScrollBar } from './ScrollBar';
+import { cn } from '../../utils.js';
+import { ScrollBar } from './ScrollBar.js';
 
 export const ScrollArea = forwardRef<React.ElementRef<typeof Root>, React.ComponentPropsWithoutRef<typeof Root>>(
   function ScrollArea({ children, className, ...props }, ref) {

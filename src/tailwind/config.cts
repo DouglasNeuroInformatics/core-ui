@@ -7,7 +7,7 @@ import path = require('node:path');
 import animate = require('tailwindcss-animate');
 import containerQueries = require('@tailwindcss/container-queries');
 import plugin = require('tailwindcss/plugin');
-import _ = require('lodash-es');
+import esToolkit = require('es-toolkit');
 
 const packageRoot = path.dirname(require.resolve('@douglasneuroinformatics/libui/package.json'));
 
@@ -69,7 +69,7 @@ const config = ({
           xl: '3rem'
         }
       },
-      extend: _.merge(
+      extend: esToolkit.merge(
         {
           animation: {
             'accordion-down': 'accordion-down 0.2s ease-out',
@@ -152,7 +152,7 @@ const config = ({
             '2xl': '1400px'
           }
         },
-        extend.theme
+        extend.theme ?? {}
       )
     }
   };

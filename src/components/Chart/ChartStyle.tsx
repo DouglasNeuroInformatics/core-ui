@@ -1,4 +1,4 @@
-import type { ChartConfig } from './types';
+import type { ChartConfig } from './types.js';
 
 // Format: { THEME_NAME: CSS_SELECTOR }
 const THEMES = { dark: '.dark', light: '' } as const;

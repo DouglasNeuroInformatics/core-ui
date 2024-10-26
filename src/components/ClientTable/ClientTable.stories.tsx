@@ -1,8 +1,8 @@
 import { randomInt, range } from '@douglasneuroinformatics/libjs';
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { ClientTable } from './ClientTable';
-import { type ClientTableColumn } from './ClientTable';
+import { ClientTable } from './ClientTable.js';
+import { type ClientTableColumn } from './ClientTable.js';
 
 type ExampleItem = {
   c1: number;

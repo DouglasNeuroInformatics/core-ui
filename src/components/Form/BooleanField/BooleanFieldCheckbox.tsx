@@ -1,12 +1,11 @@
 import type { BooleanFormField } from '@douglasneuroinformatics/libui-form-types';
 import type { Simplify } from 'type-fest';
 
-import { Checkbox } from '@/components/Checkbox';
-import { Label } from '@/components/Label';
+import { Checkbox } from '../../Checkbox/Checkbox.js';
+import { Label } from '../../Label/Label.js';
+import { FieldGroup } from '../FieldGroup/FieldGroup.js';
 
-import { FieldGroup } from '../FieldGroup';
-
-import type { BaseFieldComponentProps } from '../types';
+import type { BaseFieldComponentProps } from '../types.ts';
 
 export type BooleanFieldCheckboxProps = Simplify<
   BaseFieldComponentProps<boolean> & Omit<Extract<BooleanFormField, { variant: 'checkbox' }>, 'kind'>

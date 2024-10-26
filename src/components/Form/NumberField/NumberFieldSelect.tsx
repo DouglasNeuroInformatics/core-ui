@@ -1,11 +1,11 @@
 import type { NumberFormField } from '@douglasneuroinformatics/libui-form-types';
 import type { Simplify } from 'type-fest';
 
-import { Label } from '@/components/Label';
-import { Select } from '@/components/Select';
+import { Label } from '../../Label/Label.js';
+import { Select } from '../../Select/Select.js';
+import { FieldGroup } from '../FieldGroup/FieldGroup.js';
 
-import { FieldGroup } from '../FieldGroup';
-import { type BaseFieldComponentProps } from '../types';
+import type { BaseFieldComponentProps } from '../types.ts';
 
 export type NumberFieldSelectProps<T extends number = number> = Simplify<
   BaseFieldComponentProps<T> & Extract<NumberFormField<T>, { options: object }>

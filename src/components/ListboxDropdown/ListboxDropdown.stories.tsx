@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { ListboxDropdown } from './ListboxDropdown';
+import { ListboxDropdown } from './ListboxDropdown.js';
 
 type Story = StoryObj<typeof ListboxDropdown>;
 

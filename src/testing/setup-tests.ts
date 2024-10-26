@@ -1,7 +1,7 @@
 import { cleanup } from '@testing-library/react';
 import { afterEach, vi } from 'vitest';
 
-import { mockTranslationStore } from './mocks';
+import { mockTranslationStore } from './mocks.js';
 
 import '@testing-library/jest-dom/vitest';
 

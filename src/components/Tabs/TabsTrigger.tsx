@@ -2,7 +2,7 @@ import { forwardRef } from 'react';
 
 import * as TabsPrimitive from '@radix-ui/react-tabs';
 
-import { cn } from '@/utils';
+import { cn } from '../../utils.js';
 
 export const TabsTrigger = forwardRef<
   React.ElementRef<typeof TabsPrimitive.Trigger>,

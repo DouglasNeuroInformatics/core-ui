@@ -2,12 +2,11 @@ import { forwardRef, useId } from 'react';
 
 import { ResponsiveContainer } from 'recharts';
 
-import { ChartContext } from '@/context/ChartContext';
-import { cn } from '@/utils';
+import { ChartContext } from '../../context/ChartContext.js';
+import { cn } from '../../utils.js';
+import { Chart } from './Chart.js';
 
-import { Chart } from './Chart';
-
-import type { ChartConfig } from './types';
+import type { ChartConfig } from './types.js';
 
 export const ChartContainer = forwardRef<
   HTMLDivElement,

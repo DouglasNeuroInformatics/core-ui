@@ -1,6 +1,6 @@
 import { createContext } from 'react';
 
-import type { ChartConfig } from '@/components';
+import type { ChartConfig } from '../components/Chart/Chart.js';
 
 type ChartContextProps = {
   config: ChartConfig;

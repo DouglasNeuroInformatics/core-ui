@@ -4,13 +4,12 @@ import type { BooleanFormField } from '@douglasneuroinformatics/libui-form-types
 import { match } from 'ts-pattern';
 import type { Simplify } from 'type-fest';
 
-import { Label } from '@/components/Label';
-import { RadioGroup } from '@/components/RadioGroup';
-import { useTranslation } from '@/hooks';
+import { useTranslation } from '../../../hooks.js';
+import { Label } from '../../Label/Label.js';
+import { RadioGroup } from '../../RadioGroup/RadioGroup.js';
+import { FieldGroup } from '../FieldGroup/FieldGroup.js';
 
-import { FieldGroup } from '../FieldGroup';
-
-import type { BaseFieldComponentProps } from '../types';
+import type { BaseFieldComponentProps } from '../types.ts';
 
 const stringifyBoolean = (value: boolean | undefined) =>
   match(value)

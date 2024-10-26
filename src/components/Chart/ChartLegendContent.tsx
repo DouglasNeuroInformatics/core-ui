@@ -2,10 +2,9 @@ import { forwardRef } from 'react';
 
 import type { LegendProps } from 'recharts';
 
-import { useChart } from '@/hooks/useChart';
-import { cn } from '@/utils';
-
-import { getPayloadConfigFromPayload } from './utils';
+import { useChart } from '../../hooks/useChart.js';
+import { cn } from '../../utils.js';
+import { getPayloadConfigFromPayload } from './utils.js';
 
 export const ChartLegendContent = forwardRef<
   HTMLDivElement,

@@ -52,7 +52,7 @@
     "/tailwind.config.d.cts"
   ],
   "scripts": {
-    "build": "rm -rf dist && tsup --config tsup.config.mts",
+    "build": "rm -rf dist && tsc -b tsconfig.build.json && cp src/tailwind/globals.css dist/tailwind/globals.css",
     "format": "prettier --write src",
     "format:translations": "find src/translations -name '*.json' -exec pnpm exec sort-json {} \\;",
     "lint": "tsc && eslint --fix src",
@@ -97,6 +97,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
+    "es-toolkit": "^1.26.1",
     "framer-motion": "^11.11.7",
     "lodash-es": "^4.17.21",
     "lucide-react": "^0.451.0",
@@ -149,7 +150,6 @@
     "prettier-plugin-tailwindcss": "^0.6.8",
     "sort-json": "^2.0.1",
     "storybook": "^8.3.5",
-    "tsup": "^8.3.0",
     "typescript": "5.5.x",
     "vite": "5.4.8",
     "vitest": "^2.1.2"

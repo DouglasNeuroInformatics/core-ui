@@ -1,11 +1,10 @@
 import type { SetOptional } from 'type-fest';
 import { createStore } from 'zustand/vanilla';
 
-import libui from '@/i18n/translations/libui.json';
+import { getTranslation } from './internal.js';
+import libui from './translations/libui.json';
 
-import { getTranslation } from './internal';
-
-import type { Language, TranslateFunction, Translations } from './types';
+import type { Language, TranslateFunction, Translations } from './types.ts';
 
 type InitOptions = {
   defaultLanguage?: Language;

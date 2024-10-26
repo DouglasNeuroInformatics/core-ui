@@ -1,7 +1,7 @@
 import { faker } from '@faker-js/faker';
 import { vi } from 'vitest';
 
-import type { StorageName } from '@/hooks';
+import type { StorageName } from '../hooks.js';
 
 /**
  * Mocks the matchMedia API

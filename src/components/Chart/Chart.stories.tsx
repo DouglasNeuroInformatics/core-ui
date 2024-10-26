@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Bar, BarChart, CartesianGrid, XAxis } from 'recharts';
 
-import { Chart } from './Chart';
+import { Chart } from './Chart.js';
 
-import type { ChartConfig } from './types';
+import type { ChartConfig } from './types.js';
 
 const chartData = [
   { desktop: 186, mobile: 80, month: 'January' },

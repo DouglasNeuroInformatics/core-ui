@@ -1,9 +1,9 @@
 import { match } from 'ts-pattern';
 
-import { NumberFieldInput, type NumberFieldInputProps } from './NumberFieldInput';
-import { NumberFieldRadio, type NumberFieldRadioProps } from './NumberFieldRadio';
-import { NumberFieldSelect } from './NumberFieldSelect';
-import { NumberFieldSlider, type NumberFieldSliderProps } from './NumberFieldSlider';
+import { NumberFieldInput, type NumberFieldInputProps } from './NumberFieldInput.js';
+import { NumberFieldRadio, type NumberFieldRadioProps } from './NumberFieldRadio.js';
+import { NumberFieldSelect } from './NumberFieldSelect.js';
+import { NumberFieldSlider, type NumberFieldSliderProps } from './NumberFieldSlider.js';
 
 export type NumberFieldProps = NumberFieldInputProps | NumberFieldRadioProps | NumberFieldSliderProps;
 

@@ -1,9 +1,8 @@
-import { cn } from '@/utils';
+import { cn } from '../../utils.js';
+import { DropdownButton } from '../DropdownButton/DropdownButton.js';
+import { DropdownMenu } from '../DropdownMenu/DropdownMenu.js';
 
-import { DropdownButton } from '../DropdownButton';
-import { DropdownMenu } from '../DropdownMenu';
-
-import type { DropdownMenuContentProps } from '../DropdownMenu/DropdownMenuContent';
+import type { DropdownMenuContentProps } from '../DropdownMenu/DropdownMenuContent.js';
 
 type ActionDropdownOptions = { [key: string]: string } | readonly string[];
 

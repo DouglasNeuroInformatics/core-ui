@@ -3,8 +3,8 @@ import { useCallback } from 'react';
 import { UploadIcon } from 'lucide-react';
 import { type FileRejection, useDropzone } from 'react-dropzone';
 
-import { useTranslation } from '@/hooks/useTranslation';
-import { cn } from '@/utils';
+import { useTranslation } from '../../hooks/useTranslation.js';
+import { cn } from '../../utils.js';
 
 export type FileDropzoneProps = {
   acceptedFileTypes: {

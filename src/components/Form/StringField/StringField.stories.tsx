@@ -2,9 +2,9 @@ import { useState } from 'react';
 
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { StringField } from './StringField';
+import { StringField } from './StringField.js';
 
-import type { PasswordStrengthValue } from './StringFieldPassword';
+import type { PasswordStrengthValue } from './StringFieldPassword.js';
 
 type Story = StoryObj<typeof StringField>;
 

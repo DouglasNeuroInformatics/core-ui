@@ -2,7 +2,7 @@ import { format } from '@douglasneuroinformatics/libjs';
 import { get } from 'lodash-es';
 import type { Primitive } from 'type-fest';
 
-import type { Language } from './types';
+import type { Language } from './types.ts';
 
 export function getTranslation(
   target: { [L in Language]?: string } | string,
