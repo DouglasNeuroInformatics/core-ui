@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import { useMemo } from 'react';
 
 import { Tooltip } from 'recharts';
 
@@ -6,8 +6,7 @@ import { useChart } from '../../hooks/useChart.js';
 import { cn } from '../../utils.js';
 import { getPayloadConfigFromPayload } from './utils.js';
 
-export const ChartTooltipContent = forwardRef<
-  HTMLDivElement,
+export const ChartTooltipContent: React.FC<
   {
     hideIndicator?: boolean;
     hideLabel?: boolean;
@@ -16,27 +15,25 @@ export const ChartTooltipContent = forwardRef<
     nameKey?: string;
   } & React.ComponentProps<'div'> &
     React.ComponentProps<typeof Tooltip>
->(function ChartLegendContent(
-  {
-    active,
-    className,
-    color,
-    formatter,
-    hideIndicator = false,
-    hideLabel = false,
-    indicator = 'dot',
-    label,
-    labelClassName,
-    labelFormatter,
-    labelKey,
-    nameKey,
-    payload
-  },
+> = ({
+  active,
+  className,
+  color,
+  formatter,
+  hideIndicator = false,
+  hideLabel = false,
+  indicator = 'dot',
+  label,
+  labelClassName,
+  labelFormatter,
+  labelKey,
+  nameKey,
+  payload,
   ref
-) {
+}) => {
   const { config } = useChart();
 
-  const tooltipLabel = React.useMemo(() => {
+  const tooltipLabel = useMemo(() => {
     if (hideLabel || !payload?.length) {
       return null;
     }
@@ -135,4 +132,4 @@ export const ChartTooltipContent = forwardRef<
       </div>
     </div>
   );
-});
+};

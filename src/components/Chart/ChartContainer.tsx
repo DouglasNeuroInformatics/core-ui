@@ -1,4 +1,4 @@
-import { forwardRef, useId } from 'react';
+import { useId } from 'react';
 
 import { ResponsiveContainer } from 'recharts';
 
@@ -8,16 +8,14 @@ import { Chart } from './Chart.js';
 
 import type { ChartConfig } from './types.js';
 
-export const ChartContainer = forwardRef<
-  HTMLDivElement,
+export const ChartContainer: React.FC<
   {
     children: React.ComponentProps<typeof ResponsiveContainer>['children'];
     config: ChartConfig;
   } & React.ComponentProps<'div'>
->(function ChartContainer({ children, className, config, id, ...props }, ref) {
+> = ({ children, className, config, id, ref, ...props }) => {
   const uniqueId = useId();
   const chartId = `chart-${id ?? uniqueId.replace(/:/g, '')}`;
-
   return (
     <ChartContext.Provider value={{ config }}>
       <div
@@ -34,4 +32,4 @@ export const ChartContainer = forwardRef<
       </div>
     </ChartContext.Provider>
   );
-});
+};

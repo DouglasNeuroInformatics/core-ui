@@ -1,19 +1,16 @@
-import { forwardRef } from 'react';
-
 import type { LegendProps } from 'recharts';
 
 import { useChart } from '../../hooks/useChart.js';
 import { cn } from '../../utils.js';
 import { getPayloadConfigFromPayload } from './utils.js';
 
-export const ChartLegendContent = forwardRef<
-  HTMLDivElement,
+export const ChartLegendContent: React.FC<
   {
     hideIcon?: boolean;
     nameKey?: string;
   } & Pick<LegendProps, 'payload' | 'verticalAlign'> &
     React.ComponentProps<'div'>
->(function ChartLegendContent({ className, hideIcon = false, nameKey, payload, verticalAlign = 'bottom' }, ref) {
+> = ({ className, hideIcon = false, nameKey, payload, ref, verticalAlign = 'bottom' }) => {
   const { config } = useChart();
 
   if (!payload?.length) {
@@ -52,4 +49,4 @@ export const ChartLegendContent = forwardRef<
       })}
     </div>
   );
-});
+};
