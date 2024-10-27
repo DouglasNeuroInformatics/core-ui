@@ -1,5 +1,3 @@
-'use client';
-
 import { CardContent } from './CardContent.js';
 import { CardDescription } from './CardDescription.js';
 import { CardFooter } from './CardFooter.js';
