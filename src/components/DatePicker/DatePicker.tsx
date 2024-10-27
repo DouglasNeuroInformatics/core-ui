@@ -1,3 +1,5 @@
+'use client';
+
 import { useReducer, useState } from 'react';
 import * as React from 'react';
 

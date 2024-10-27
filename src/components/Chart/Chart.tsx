@@ -1,3 +1,5 @@
+'use client';
+
 import { Legend, Tooltip } from 'recharts';
 
 import { ChartContainer } from './ChartContainer.js';
@@ -13,4 +15,4 @@ export const Chart = Object.assign(ChartContainer, {
   TooltipContent: ChartTooltipContent
 });
 
-export * from './types.js';
+export type * from './types.js';

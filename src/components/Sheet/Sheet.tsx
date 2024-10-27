@@ -1,3 +1,5 @@
+'use client';
+
 import { Close, Portal, Root, Trigger } from '@radix-ui/react-dialog';
 
 import { SheetBody } from './SheetBody.js';

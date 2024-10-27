@@ -1,3 +1,5 @@
+'use client';
+
 import { PaginationContent } from './PaginationContent.js';
 import { PaginationEllipsis } from './PaginationEllipsis.js';
 import { PaginationItem } from './PaginationItem.js';

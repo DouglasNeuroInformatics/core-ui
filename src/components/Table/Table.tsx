@@ -1,3 +1,5 @@
+'use client';
+
 import { TableBody } from './TableBody.js';
 import { TableCaption } from './TableCaption.js';
 import { TableCell } from './TableCell.js';

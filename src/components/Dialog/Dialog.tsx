@@ -1,3 +1,5 @@
+'use client';
+
 import { Root, Trigger } from '@radix-ui/react-dialog';
 
 import { DialogBody } from './DialogBody.js';

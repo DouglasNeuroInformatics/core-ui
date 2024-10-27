@@ -1,3 +1,5 @@
+'use client';
+
 import type { HTMLProps } from 'react';
 
 import { cn } from '../../utils.js';

@@ -1,3 +1,5 @@
+'use client';
+
 import { BreadcrumbEllipsis } from './BreadcrumbEllipsis.js';
 import { BreadcrumbItem } from './BreadcrumbItem.js';
 import { BreadcrumbLink } from './BreadcrumbLink.js';

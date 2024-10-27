@@ -1,3 +1,5 @@
+'use client';
+
 import { Group, Portal, RadioGroup, Root, Sub, Trigger } from '@radix-ui/react-context-menu';
 
 import { ContextMenuCheckboxItem } from './ContextMenuCheckboxItem.js';

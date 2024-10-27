@@ -1,3 +1,5 @@
+'use client';
+
 import { TabsContent } from './TabsContent.js';
 import { TabsList } from './TabsList.js';
 import { TabsRoot } from './TabsRoot.js';

@@ -1,3 +1,5 @@
+'use client';
+
 import { Root, Trigger } from '@radix-ui/react-hover-card';
 
 import { HoverCardContent } from './HoverCardContent.js';

@@ -1,3 +1,5 @@
+'use client';
+
 import { AccordionContent } from './AccordionContent.js';
 import { AccordionItem } from './AccordionItem.js';
 import { AccordionRoot } from './AccordionRoot.js';

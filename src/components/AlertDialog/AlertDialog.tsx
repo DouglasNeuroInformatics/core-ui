@@ -1,3 +1,5 @@
+'use client';
+
 import { Root, Trigger } from '@radix-ui/react-alert-dialog';
 
 import { AlertDialogAction } from './AlertDialogAction.js';

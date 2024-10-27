@@ -1,3 +1,5 @@
+'use client';
+
 import { TooltipContent } from './TooltipContent.js';
 import { TooltipRoot } from './TooltipRoot.js';
 import { TooltipTrigger } from './TooltipTrigger.js';

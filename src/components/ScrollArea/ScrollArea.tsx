@@ -1,3 +1,5 @@
+'use client';
+
 import { forwardRef } from 'react';
 
 import { Corner, Root, Viewport } from '@radix-ui/react-scroll-area';

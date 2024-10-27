@@ -1,5 +1,3 @@
-'use client';
-
 export * from './components/Accordion/Accordion.js';
 export * from './components/ActionDropdown/ActionDropdown.js';
 export * from './components/AlertDialog/AlertDialog.js';

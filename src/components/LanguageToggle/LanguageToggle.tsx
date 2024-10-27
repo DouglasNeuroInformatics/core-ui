@@ -1,3 +1,5 @@
+'use client';
+
 import { LanguagesIcon } from 'lucide-react';
 
 import { useTranslation } from '../../hooks.js';

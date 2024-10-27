@@ -1,3 +1,5 @@
+'use client';
+
 import { AvatarFallback } from './AvatarFallback.js';
 import { AvatarImage } from './AvatarImage.js';
 import { AvatarRoot } from './AvatarRoot.js';
