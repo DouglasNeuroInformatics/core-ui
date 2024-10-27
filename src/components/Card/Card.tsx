@@ -1,24 +1,20 @@
 'use client';
 
-import * as React from 'react';
-
 import { cn } from '../../utils.js';
 
-const CardRoot = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(function CardRoot(
-  { className, ...props },
-  ref
-) {
-  return (
-    <div
-      className={cn('rounded-xl border bg-card text-card-foreground shadow', className)}
-      data-testid="card"
-      ref={ref}
-      {...props}
-    />
-  );
-});
+const Root: React.FC<React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>> = ({
+  className,
+  ref,
+  ...props
+}) => (
+  <div
+    className={cn('rounded-xl border bg-card text-card-foreground shadow', className)}
+    data-testid="card"
+    {...props}
+  />
+);
 
-export const Card = Object.assign(CardRoot, {
+export const Card = Object.assign(Root, {
   Content: ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) => (
     <div className={cn('p-6 pt-0', className)} {...props} />
   ),
