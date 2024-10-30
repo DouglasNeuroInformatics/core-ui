@@ -1,4 +1,3 @@
-export * from './hooks/useChart.js';
 export * from './hooks/useDownload.js';
 export * from './hooks/useEventCallback.js';
 export * from './hooks/useEventListener.js';

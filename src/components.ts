@@ -7,7 +7,6 @@ export * from './components/Badge/Badge.js';
 export * from './components/Breadcrumb/Breadcrumb.js';
 export * from './components/Button/Button.js';
 export * from './components/Card/Card.js';
-export * from './components/Chart/Chart.js';
 export * from './components/Checkbox/Checkbox.js';
 export * from './components/ClientTable/ClientTable.js';
 export * from './components/Collapsible/Collapsible.js';
