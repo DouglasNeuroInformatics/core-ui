@@ -1,5 +1,3 @@
-import { forwardRef } from 'react';
-
 import { AnimatePresence, motion } from 'framer-motion';
 import { range } from 'lodash-es';
 
@@ -13,7 +11,7 @@ export type CalendarProps = {
   year: number;
 };
 
-export const Calendar = forwardRef<HTMLDivElement, CalendarProps>(function Calendar(props, ref) {
+export const Calendar: React.FC<CalendarProps> = (props) => {
   const { t } = useTranslation('libui');
   const firstDay = new Date(props.year, props.month).getDay();
   const lastDay = new Date(props.year, props.month + 1, 0).getDate();
@@ -38,7 +36,7 @@ export const Calendar = forwardRef<HTMLDivElement, CalendarProps>(function Calen
         key={`${props.year}-${props.month}`}
         transition={{ duration: CALENDAR_ANIMATION_DURATION }}
       >
-        <div className="grid h-56 w-56 grid-cols-7 text-sm" ref={ref}>
+        <div className="grid h-56 w-56 grid-cols-7 text-sm">
           {daysOfWeek.map((label) => (
             <div className="flex h-8 w-8 items-center justify-center text-muted-foreground" key={label}>
               {label.charAt(0).toUpperCase()}
@@ -62,4 +60,4 @@ export const Calendar = forwardRef<HTMLDivElement, CalendarProps>(function Calen
       </motion.div>
     </AnimatePresence>
   );
-});
+};
